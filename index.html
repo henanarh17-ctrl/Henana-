@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Henana Fathima – Generative AI Student Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF2F8;--ink:#14213D;--mut:#52607D;--card:#fff;--acc:#8A5E14;--net:#2F5DA8;--line:#CBD5E6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1A33;--ink:#E9EEF8;--mut:#A3B0C8;--card:#15244A;--acc:#E0BE7A;--net:#7FA6F0;--line:#2A3B66}}
+:root[data-theme="dark"]{--bg:#0E1A33;--ink:#E9EEF8;--mut:#A3B0C8;--card:#15244A;--acc:#E0BE7A;--net:#7FA6F0;--line:#2A3B66}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",Georgia,sans-serif;line-height:1.1;margin:0}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+.hero{background:var(--card);border-bottom:1px solid var(--line);padding:36px 0 20px}
+h1{font-size:clamp(2.6rem,10vw,5rem);font-weight:800;letter-spacing:-.02em}
+.role{color:var(--acc);font-weight:600;margin:10px 0 4px}
+.sub{color:var(--mut);margin:0 0 18px;max-width:52ch}
+#net{display:block;width:100%;height:380px;touch-action:manipulation;cursor:pointer}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 10px}
+.chips button{font:600 15px Figtree,sans-serif;color:var(--ink);background:transparent;border:1.5px solid var(--line);border-radius:999px;padding:8px 16px;cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chips button:focus-visible,a:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+#cap{min-height:3.4em;margin:0;color:var(--mut)}
+#cap b{color:var(--ink)}
+section{padding:44px 0 0}
+h2{font-size:clamp(1.7rem,5vw,2.3rem);margin-bottom:16px}
+p{margin:0 0 12px;max-width:62ch}
+ol.tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line)}
+ol.tl li{position:relative;margin-bottom:24px}
+ol.tl li::before{content:"";position:absolute;left:-30px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--acc)}
+.yr{color:var(--acc);font-weight:600}
+.where{color:var(--mut)}
+ul.cert{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+ul.cert li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+ul.cert span{display:block;color:var(--mut);font-size:.92rem}
+.win{background:var(--card);border-left:5px solid var(--acc);border-radius:4px 14px 14px 4px;padding:18px 20px}
+.contact{display:grid;gap:10px}
+.contact a{color:var(--ink);font-weight:600;text-decoration-color:var(--acc);text-underline-offset:4px}
+footer{padding:48px 0 32px;color:var(--mut);font-size:.9rem}
+@media (min-width:700px){#net{height:460px}.certgrid{grid-template-columns:1fr 1fr}ul.cert{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header class="hero">
+<div class="wrap">
+<h1>Henana Fathima</h1>
+<p class="role">B.Sc. Computer Science, Generative AI</p>
+<p class="sub">First-year student in Coimbatore, looking for an internship where I can build real skills and contribute to a team.</p>
+</div>
+<canvas id="net" role="img" aria-label="Interactive network linking Henana to her five skills: Python, SQL, DBMS, HTML and Generative AI"></canvas>
+<div class="wrap">
+<div class="chips" id="chips"></div>
+<p id="cap" aria-live="polite"></p>
+</div>
+</header>
+
+<main class="wrap">
+<section>
+<h2>About me</h2>
+<p>I’m a motivated first-year Computer Science student specialising in Generative AI. I have a working foundation in Python, database management, SQL and HTML, and I enjoy learning new technologies and sharpening how I solve problems.</p>
+<p>I’m looking for an internship to gain practical industry experience.</p>
+</section>
+
+<section>
+<h2>Education</h2>
+<ol class="tl">
+<li><h3>B.Sc. Computer Science, Generative AI</h3><div class="where">Rathinam Global Deemed to be University</div><div class="yr">2026 to 2029, currently pursuing</div></li>
+<li><h3>Higher Secondary Certificate (Class XII)</h3><div class="where">Ideal Matriculation Higher Secondary School</div><div class="yr">2026, 67%</div></li>
+<li><h3>Secondary School Leaving Certificate (Class X)</h3><div class="where">Global Matriculation School, Devala</div><div class="yr">2024, 86%</div></li>
+</ol>
+</section>
+
+<section>
+<h2>Certifications</h2>
+<ul class="cert">
+<li>Business Communications<span>HP LIFE</span></li>
+<li>Business Email<span>HP LIFE</span></li>
+<li>Effective Presentations<span>HP LIFE</span></li>
+<li>Programming Fundamentals: Introduction to Programming</li>
+<li>Python Essentials 1<span>Cisco Networking Academy</span></li>
+</ul>
+</section>
+
+<section>
+<h2>Achievements</h2>
+<div class="win">Participated in a university-level hackathon at Rathinam College.</div>
+</section>
+
+<section>
+<h2>Strengths</h2>
+<p>Quick learning and adaptability, problem-solving, communication, teamwork and collaboration, time management, and a steady willingness to learn. I speak Tamil and English.</p>
+</section>
+
+<section>
+<h2>Get in touch</h2>
+<div class="contact">
+<a href="mailto:henanarh17@gmail.com">henanarh17@gmail.com</a>
+<a href="tel:+918610723817">+91 86107 23817</a>
+<a href="https://www.linkedin.com/in/henana-undefined-851000425?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="Visit Henana Fathima on LinkedIn">LinkedIn</a>
+<a href="https://github.com/henanarh17-ctrl" target="_blank" rel="noopener noreferrer" aria-label="Visit Henana Fathima on GitHub">GitHub</a>
+<span>Coimbatore, Tamil Nadu</span>
+</div>
+</section>
+<footer>© 2026 Henana Fathima</footer>
+</main>
+
+<script>
+(function(){
+var S=[
+["Python","I earned Python Essentials 1 from Cisco Networking Academy and completed an introductory programming fundamentals course."],
+["SQL","I use SQL as the query language for working with data in relational databases."],
+["DBMS","I have foundational knowledge of how database management systems store and organise data."],
+["HTML","I know HTML for structuring web pages and building simple web interfaces."],
+["Generative AI","This is my degree specialisation at Rathinam Global, 2026 to 2029."]
+];
+var c=document.getElementById("net"),x=c.getContext("2d"),chips=document.getElementById("chips"),cap=document.getElementById("cap");
+var rm=matchMedia("(prefers-reduced-motion: reduce)").matches;
+var W=0,H=0,D=window.devicePixelRatio||1,amb=[],act=4,t=0,m={x:-999,y:-999},col={};
+function vars(){var s=getComputedStyle(document.documentElement);col={ink:s.getPropertyValue("--ink").trim(),net:s.getPropertyValue("--net").trim(),acc:s.getPropertyValue("--acc").trim(),card:s.getPropertyValue("--card").trim()}}
+function size(){var r=c.getBoundingClientRect();W=r.width;H=r.height;c.width=W*D;c.height=H*D;x.setTransform(D,0,0,D,0,0);
+var n=Math.round(W*H/9000);amb=[];for(var i=0;i<n;i++)amb.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35});vars();draw()}
+function pos(i){var a=i/S.length*6.2832-1.57+t*.12,R=Math.min(W*.36,H*.36);return{x:W/2+Math.cos(a)*R*1.15,y:H/2+Math.sin(a)*R}}
+function line(a,b,al,w){x.globalAlpha=al;x.lineWidth=w||1;x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke()}
+function draw(){x.clearRect(0,0,W,H);x.strokeStyle=col.net;x.fillStyle=col.net;
+for(var i=0;i<amb.length;i++){var p=amb[i];if(!rm){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1}
+for(var j=i+1;j<amb.length;j++){var q=amb[j],d=Math.hypot(p.x-q.x,p.y-q.y);if(d<85)line(p,q,(1-d/85)*.35)}
+var dm=Math.hypot(p.x-m.x,p.y-m.y);if(dm<130)line(p,m,(1-dm/130)*.8,1.4);
+x.globalAlpha=.55;x.beginPath();x.arc(p.x,p.y,2,0,6.2832);x.fill()}
+var C={x:W/2,y:H/2};x.font="600 14px Figtree,sans-serif";x.textAlign="center";
+for(var k=0;k<S.length;k++){var s=pos(k),on=k===act;x.strokeStyle=on?col.acc:col.net;line(C,s,on?1:.5,on?2.5:1.2);
+for(var a=0;a<amb.length;a++){var dd=Math.hypot(amb[a].x-s.x,amb[a].y-s.y);if(dd<70){x.strokeStyle=col.net;line(amb[a],s,(1-dd/70)*.5)}}}
+x.globalAlpha=1;x.fillStyle=col.acc;x.beginPath();x.arc(C.x,C.y,13,0,6.2832);x.fill();
+x.fillStyle=col.ink;x.fillText("Henana",C.x,C.y+34);
+for(var k=0;k<S.length;k++){var s=pos(k),on=k===act;x.globalAlpha=1;x.fillStyle=on?col.acc:col.card;x.strokeStyle=on?col.acc:col.net;x.lineWidth=2;
+x.beginPath();x.arc(s.x,s.y,on?12:8,0,6.2832);x.fill();x.stroke();x.fillStyle=col.ink;x.fillText(S[k][0],s.x,s.y-(on?20:16))}
+x.globalAlpha=1}
+function pick(i){act=i;cap.innerHTML="<b>"+S[i][0]+".</b> "+S[i][1];var b=chips.children;for(var k=0;k<b.length;k++)b[k].setAttribute("aria-pressed",k===i);if(rm)draw()}
+S.forEach(function(s,i){var b=document.createElement("button");b.type="button";b.textContent=s[0];b.onclick=function(){pick(i)};chips.appendChild(b)});
+c.addEventListener("pointermove",function(e){var r=c.getBoundingClientRect();m.x=e.clientX-r.left;m.y=e.clientY-r.top;if(rm)draw()});
+c.addEventListener("pointerleave",function(){m.x=m.y=-999});
+c.addEventListener("pointerdown",function(e){var r=c.getBoundingClientRect(),px=e.clientX-r.left,py=e.clientY-r.top;m.x=px;m.y=py;
+var best=-1,bd=40;for(var k=0;k<S.length;k++){var s=pos(k),d=Math.hypot(s.x-px,s.y-py);if(d<bd){bd=d;best=k}}if(best>-1)pick(best)});
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change",function(){vars();draw()});
+addEventListener("resize",size);
+pick(4);size();
+(function loop(){if(!rm){t+=.016;draw();requestAnimationFrame(loop)}})();
+})();
+</script>
+</body>
+</html>
